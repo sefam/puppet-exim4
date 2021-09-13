@@ -49,6 +49,12 @@ class exim4::params {
     # Sets macro LOCAL_DELIVERY.
     $localdelivery = 'mail_spool'
 
+    # cf update-exim4.conf(8): A list of machines for which we serve as 
+    # smarthost. Please note that 127.0.0.1 and ::1 are always permitted to relay
+    # since /usr/lib/sendmail is available anyway and relay control doesn't make
+    # sense here. Sets macro MAIN_RELAY_NETS.
+    $relay_nets = ''
+    
     # cf update-exim4.conf(8): List of hosts to which all outgoing mail is
     # passed to and that takes care of delivering it. Each of the hosts is
     # tried, in the order specified (See exim specification, chapter 20.5).

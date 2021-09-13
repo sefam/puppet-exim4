@@ -25,7 +25,7 @@ dc_local_interfaces='<%= scope.lookupvar('exim4::local_interfaces').join(' ; ') 
 dc_readhost='<%= @fqdn %>'
 dc_relay_domains=''
 dc_minimaldns='false'
-dc_relay_nets=''
+dc_relay_nets='<%= scope.lookupvar('exim4::relay_nets') %>'
 dc_smarthost='<%= scope.lookupvar('exim4::smarthost') %>'
 CFILEMODE='644'
 dc_use_split_config='false'

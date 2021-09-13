@@ -68,6 +68,7 @@ class exim4(
   $ensure           = $exim4::params::ensure,
   $configtype       = $exim4::params::configtype,
   $localdelivery    = $exim4::params::localdelivery,
+  $relay_nets       = $exim4::params::relay_nets,
   $smarthost        = $exim4::params::smarthost,
   $nodnslookup      = $exim4::params::nodnslookup,
   $local_interfaces = $exim4::params::local_interfaces,
